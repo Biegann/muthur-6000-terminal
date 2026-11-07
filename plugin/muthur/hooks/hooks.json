@@ -1,0 +1,53 @@
+{
+  "description": "MU/TH/UR 6000: wykrywanie zwrotu do MATKI, dźwięki interfejsu i mod (spinner, panel lampek, etykiety)",
+  "modules": ["./register.tsx"],
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe",
+            "args": ["-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass", "-File", "${CLAUDE_PLUGIN_ROOT}/scripts/prompt-submit.ps1"],
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/player/muthur-play.exe", "args": ["stop"], "async": true }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/player/muthur-play.exe", "args": ["tool"], "async": true }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/player/muthur-play.exe", "args": ["error"], "async": true }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/player/muthur-play.exe", "args": ["attention"], "async": true }
+        ]
+      }
+    ],
+    "StopFailure": [
+      {
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/player/muthur-play.exe", "args": ["alert"], "async": true }
+        ]
+      }
+    ]
+  }
+}

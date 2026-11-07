@@ -1,0 +1,12 @@
+{
+  "name": "muthur-6000-terminal",
+  "owner": { "name": "Przemysław Biegański" },
+  "description": "Motyw MU/TH/UR 6000 dla Claude Code: interfejs MATKI ze statku Nostromo, po polsku.",
+  "plugins": [
+    {
+      "name": "muthur",
+      "source": "./plugin/muthur",
+      "description": "MU/TH/UR 6000: motyw Claude Code w stylu komputera MATKA z filmu „Obcy” (1979). Kolory, tryb MATKI, panel lampek, dźwięki. Windows."
+    }
+  ]
+}

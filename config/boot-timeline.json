@@ -1,0 +1,54 @@
+{
+  "note": "Wspólny harmonogram ekranu rozruchowego. Czyta go animacja (MuthurRuntime.psm1) i generator ścieżki dźwiękowej (tools/build_sounds.py), więc obraz i dźwięk są zsynchronizowane co do milisekundy. Czasy w ms. Kolejność etapów według sceny z filmu.",
+  "charMs": 33,
+  "readyHoldMs": 350,
+  "full": [
+    { "id": "access", "ms": 800, "buttonAtMs": 60, "buttonMs": 680 },
+    { "id": "systems", "ms": 1200, "lineMs": 200, "statusOffsetMs": 100 },
+    { "id": "room", "ms": 1500, "lightsMs": 1000 },
+    { "id": "crt", "ms": 1100, "drawMs": 600 },
+    { "id": "matrix", "ms": 1600, "scanMs": 900, "tableMs": 1250 },
+    { "id": "select", "ms": 700, "jumpAtMs": 300 },
+    { "id": "clear", "ms": 120 },
+    { "id": "ready" }
+  ],
+  "short": [
+    { "id": "room", "ms": 1500, "lightsMs": 1000 },
+    { "id": "crt", "ms": 1100, "drawMs": 600 },
+    { "id": "clear", "ms": 120 },
+    { "id": "ready" }
+  ],
+  "texts": {
+    "header": "MU/TH/UR 6000 · USCSS NOSTROMO 180924609",
+    "access": "AUTORYZACJA DOSTĘPU",
+    "accessOk": "PRZYJĘTA",
+    "checks": [
+      ["ZASILANIE GŁÓWNE", "OK", "ok"],
+      ["PODTRZYMANIE ŻYCIA", "OK", "ok"],
+      ["BANKI PAMIĘCI", "OK", "ok"],
+      ["KOMORY HIPERSNU", "OTWIERANIE", "warn"],
+      ["SYGNAŁ NIEZNANEGO POCHODZENIA", "WYKRYTY", "alert"]
+    ],
+    "matrixTitle": "MACIERZ ADRESOWA NADZORU",
+    "matrix": [
+      ["KRFX", "OM2077AM", "WYRÓWNANIE L", "SM2093"],
+      ["ORIENTACJA", "SM2078", "FOTO F", "SM2094"],
+      ["CIEPŁO ODPADOWE", "2080", "ZASILANIE", ""],
+      ["PROMIENIOWANIE", "2081", "IUA", "SM2096"],
+      ["WENTYLACJA", "2082AM", "2LA", "SM2097"],
+      ["NAWIGACJA", "M2083", "3RA", "SM2098"],
+      ["CZAS", "M2084", "4LHA", "SM2099"],
+      ["POZ. GALAKT.", "", "SIATKI SZARE", ""],
+      ["DOWODZENIE", "2086SC", "TŁUMIENIE BEZWŁ.", "3002AM"],
+      ["INTERFEJS", "2037", "POKŁAD A", "A3003"],
+      ["UWAGA", "2087SC", "POKŁAD B", "A3004"],
+      ["ALARM", "2088SC", "POKŁAD C", "A3005"],
+      ["STAN WOJENNY", "2090", "PODTRZ. ŻYCIA", ""],
+      ["BLOKADA", "M2091", "0%", "M3003AM"]
+    ],
+    "matrixFrom": 8,
+    "matrixTo": 9,
+    "scanCodes": ["RM7", "GGG", "SYS 053", "U2", "PK", "00", "CY", "8888", "455", "DDDD", "KKK", "TG/7", "AAAAAA", "HCC", "DZT", "0018", "W L8", "S18", "666", "HR V2"],
+    "ready": "INTERFEJS 2037 GOTOWY DO ZAPYTAŃ"
+  }
+}

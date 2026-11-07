@@ -1,0 +1,10 @@
+{
+  "name": "muthur",
+  "version": "0.3.0",
+  "description": "MU/TH/UR 6000: motyw terminala komputera statku Nostromo (Obcy, 1979). Kolory, osobowość MATKI i komunikaty po polsku.",
+  "author": {
+    "name": "Przemysław Biegański"
+  },
+  "license": "GPL-3.0-only",
+  "repository": "https://github.com/Biegann/muthur-6000-terminal"
+}
