@@ -1,5 +1,8 @@
 # MU/TH/UR 6000: motyw dla Claude Code
 
+<img width="2546" height="1386" alt="image" src="https://github.com/user-attachments/assets/ca0382e4-40af-43e7-88e5-4f29b7011c63" />
+
+
 Nakładka, dzięki której praca z Claude Code wygląda jak rozmowa z MATKĄ, komputerem statku USCSS Nostromo z filmu „Obcy – 8. pasażer Nostromo” (1979). Wszystkie komunikaty są po polsku.
 
 Projekt fanowski. Nie zawiera materiałów z filmu: font, dźwięki i grafika powstają w tym repozytorium.
